@@ -1,6 +1,7 @@
 export default function Layout({ children }) {
   return (
-    <html>
+    <html lang = "pt-BR">
+      <head />
       <body>{children}</body>
     </html>
   );
