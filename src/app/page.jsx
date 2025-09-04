@@ -1,13 +1,10 @@
-import "@/app/home.scss";
-import NavBar from "../components/NavBar/Navbar";
+import "./styles/page.scss";
+import MainContainer from "@/components/MainContainer/MainContainer";
 
 export default function Home() {
   return (
     <>
-      <NavBar />
-      <div className="container">
-        <h1>Hello World</h1>
-      </div>
+      <MainContainer />
     </>
   );
 }
