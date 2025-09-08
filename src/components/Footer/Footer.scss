@@ -1,0 +1,17 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #111;
+  color: white;
+  padding: 20px;
+  width: 100%;
+  background: linear-gradient(180deg, rgba(57, 57, 57, 0) 0%, #212121 37.5%);
+
+  .Description{
+    display: flex;
+    flex-direction: column;
+    width: 80vh;
+    margin: 5vh;
+  }
+}
