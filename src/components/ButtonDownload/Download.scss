@@ -1,0 +1,19 @@
+.Download {
+    display: flex;
+    background-color: #2A79C1;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    touch-action: manipulation;
+    border: none;
+    border-radius: 2.4vh;
+    height: 4.8vh;
+    width: 14.7vh;
+    cursor: pointer;
+    font-family: Inter, sans-serif;
+    transition: 0.3s;
+}
+.Download:hover {
+    background-color: #1F5EA8;
+}

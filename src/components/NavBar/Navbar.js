@@ -1,6 +1,6 @@
 import "@/components/NavBar/NavBar.scss";
 import Image from "next/image";
-
+import ButtonDownload from "@/components/ButtonDownload/Download.js";
 export default function NavBar() {
     return (
         <div className="navBar">
@@ -9,18 +9,16 @@ export default function NavBar() {
             </div>  
             <ul className="ul">
                 <li className="li" id={'HowItWorks'}>
-                    <a href="#">Como Funciona</a>
+                    <a href="#HowItWorks">Como Funciona</a>
                 </li>
                 <li className="li" id={'Flow'}>
-                    <a href="#">Flow</a>
+                    <a href="#Flow">Flow</a>
                 </li>
                 <li className="li">
-                    <a href="#" id={'Functions'}>Funcionalidades</a>
+                    <a href="#Functions" id={'Functions'}>Funcionalidades</a>
                 </li>
                 <li className="li" id={'Download'}>
-                    <button className="Download">Baixe o app
-                    
-                    </button>
+                    <ButtonDownload />
                 </li>
             </ul>
         </div>
