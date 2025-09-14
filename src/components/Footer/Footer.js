@@ -6,8 +6,8 @@ export default function Footer() {
         <footer className="footer">
             <div className="leftSide">
                 <Image src="/iconeFooter.png" alt="icone Oris" width={80} height={22} />
-                <p className="Description">App de hábitos que entende sua rotina e se adapta a ela. integrado com IA e o calendário pessoal, Oris sabe os momentos livres e te manda um lembrete no horário certo.</p>
-                <p>© 2025 Oris. Todos os direitos reservados.</p>
+                <p className="Description">App de hábitos que entende sua rotina e se adapta a ela. Integrado com IA e o calendário pessoal, Oris sabe os seus momentos livres e te manda um lembrete no horário certo.</p>
+                <p style={{marginTop: "6vh"}}>© 2025 Oris. Todos os direitos reservados.</p>
             </div>
 
             <div className="rightSide">
