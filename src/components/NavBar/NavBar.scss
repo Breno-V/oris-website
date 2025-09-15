@@ -2,21 +2,23 @@
     display: flex;
     position: absolute;
     justify-content: flex-end;
-    border-radius: 3.2vh;
-    border: 0.1vh solid rgba(255, 255, 255, 0.10);
+    border-radius: 2rem;
+    border: 0.063rem solid rgba(255, 255, 255, 0.10);
     background: rgba(64, 64, 64, 0.25);
-    backdrop-filter: blur(1.5vh);
-    width: 93.8vh;
-    height: 6.4vh;
-    margin-top: 2vh;
-    margin-left: 50vh;
+    backdrop-filter: blur(0.938rem);
+    width: 58.625rem;
+    height: 4rem;
+    margin-top: 1.25rem;
+    margin-left: 31.25rem;
+
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
     .logo {
         position: absolute;
-        left: 2vh;
-        top: 0.5vh;
-        width: 9.4vh;
-        height: 5vh;
+        left: 1.25rem;
+        top: 0.313rem;
+        width: 5.875rem;
+        height: 3.125rem;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -32,10 +34,9 @@
         list-style: none;
 
         .li {
-            padding: 2.5vh;
+            padding: 1.563rem;
 
             .Flow {
-                background-color: #e29bf8;
                 text-align: center;
                 align-items: center;
                 text-decoration: none;
@@ -43,7 +44,6 @@
             }
 
             .HowItWorks {
-                background-color: #e29bf8;
                 text-align: center;
                 align-items: center;
                 text-decoration: none;

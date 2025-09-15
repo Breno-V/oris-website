@@ -1,9 +1,145 @@
-.MainContainer {
+$text-color: #DFDFDF;
+
+.HIWcontainer {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
-}
+  justify-content: center;
+  align-items: center;
 
-.MainContainer > main {
-  flex: 1; /* ocupa o espaço entre NavBar e Footer */
+  width: 100%; // ocupa toda a largura disponível
+  max-width: 70rem; // limita a largura para não ficar gigante em telas grandes
+  margin: 6rem auto; // centraliza horizontalmente
+
+  height: 71.71206rem; // deixa a altura se ajustar ao conteúdo
+
+  .title {
+    background: linear-gradient(90deg, #DFDFDF 0%, #2883BD 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-size: 2.5rem;
+
+    line-height: 190%;
+
+    letter-spacing: -0.06rem;
+  }
+
+  .text {
+    display: flex;
+    color: $text-color;
+    justify-content: center;
+    align-items: center;
+    margin: 0 3rem;
+  }
+
+  .upText {
+    display: flex;
+    color: $text-color;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5rem 0 2rem 0;
+    font-weight: bold;
+    font-size: x-large;
+  }
+
+  .cards {
+    height: 57.02456rem;
+    padding: 2rem;
+    flex-shrink: 0;
+
+    .cardsUp {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 27.5rem;
+      gap: 3.125rem;
+      flex-shrink: 0;
+      flex-direction: row;
+    }
+
+    .cardsDown {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 27.5rem;
+      flex-shrink: 0;
+      gap: 3.125rem;
+      flex-direction: row;
+    }
+
+    .card1 {
+      width: 34.0625rem;
+      height: 27.5rem;
+      flex-shrink: 0;
+      margin-bottom: 4rem;
+
+      border-radius: 2rem;
+      border: 1px solid rgba(255, 255, 255, 0.36);
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.10) 45.19%, rgba(61, 61, 61, 0.10) 100%);
+      backdrop-filter: blur(7.199999809265137px);
+
+      .Images {
+        display: flex;
+        justify-content: center;
+        margin-top: 5.12rem;
+        gap: 4rem;
+      }
+    }
+
+    .card2 {
+      width: 34.0625rem;
+      height: 27.5rem;
+      flex-shrink: 0;
+      margin-bottom: 4rem;
+
+      border-radius: 2rem;
+      border: 1px solid rgba(255, 255, 255, 0.36);
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.10) 45.19%, rgba(61, 61, 61, 0.10) 100%);
+      backdrop-filter: blur(7.199999809265137px);
+
+      .Images {
+        display: flex;
+        justify-content: center;
+        gap: 4rem;
+      }
+
+    }
+
+    .card3 {
+      width: 34.0625rem;
+      height: 27.5rem;
+      flex-shrink: 0;
+
+      border-radius: 2rem;
+      border: 1px solid rgba(255, 255, 255, 0.36);
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.10) 45.19%, rgba(61, 61, 61, 0.10) 100%);
+      backdrop-filter: blur(7.199999809265137px);
+
+      .Images {
+        display: flex;
+        justify-content: center;
+        gap: 4rem;
+      }
+
+    }
+
+    .card4 {
+      width: 34.0625rem;
+      height: 27.5rem;
+      flex-shrink: 0;
+
+      border-radius: 2rem;
+      border: 1px solid rgba(255, 255, 255, 0.36);
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.10) 45.19%, rgba(61, 61, 61, 0.10) 100%);
+      backdrop-filter: blur(7.199999809265137px);
+
+      .Images {
+        display: flex;
+        justify-content: center;
+        gap: 4rem;
+      }
+
+    }
+  }
 }

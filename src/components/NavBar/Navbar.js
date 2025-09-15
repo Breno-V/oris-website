@@ -8,16 +8,16 @@ export default function NavBar() {
                 <Image src="/logo.png" alt="Logo" width={94} height={25.87} />
             </div>  
             <ul className="ul">
-                <li className="li" id={'HowItWorks'}>
+                <li className="li">
                     <a href="#HowItWorks">Como Funciona</a>
                 </li>
-                <li className="li" id={'Flow'}>
+                <li className="li">
                     <a href="#Flow">Flow</a>
                 </li>
                 <li className="li">
-                    <a href="#Functions" id={'Functions'}>Funcionalidades</a>
+                    <a href="#Functions">Funcionalidades</a>
                 </li>
-                <li className="li" id={'Download'}>
+                <li className="li">
                     <ButtonDownload />
                 </li>
             </ul>
