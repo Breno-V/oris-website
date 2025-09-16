@@ -9,10 +9,10 @@ export default function NavBar() {
             </div>  
             <ul className="ul">
                 <li className="li">
-                    <a href="#HowItWorks">Como Funciona</a>
+                    <a href="#HowItWorks" className="HowItWorks">Como Funciona</a>
                 </li>
                 <li className="li">
-                    <a href="#Flow">Flow</a>
+                    <a href="#Flow" className="Flow">Flow</a>
                 </li>
                 <li className="li">
                     <a href="#Functions">Funcionalidades</a>

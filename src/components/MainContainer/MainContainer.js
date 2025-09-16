@@ -4,14 +4,14 @@ import Image from "next/image";
 export default function MainContainer() {
     return (
         <>
-            <section>
-                <div className="WelcomeArea">
-
+            {/* <section>
+                <div className="welcomeArea">
+                    <div className="title">App de hábitos que se adapta à sua rotina</div>
                 </div>
-            </section>
+            </section> */}
             <section>
-                <div className="HIWcontainer">
-                    <h2 className="title" id="HowItWorks">Mais que um app, uma transformação.</h2>
+                <div className="HIWcontainer" id="HowItWorks">
+                    <h2 className="title">Mais que um app, uma transformação.</h2>
                     <div className="cards">
                         <div className="cardsUp">
                             <div className="card1">
