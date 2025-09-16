@@ -23,6 +23,7 @@ $text-color: #DFDFDF;
     line-height: 190%;
 
     letter-spacing: -0.06rem;
+    margin-bottom: 5rem;
   }
 
   .text {
@@ -33,15 +34,7 @@ $text-color: #DFDFDF;
     margin: 0 3rem;
   }
 
-  .upText {
-    display: flex;
-    color: $text-color;
-    justify-content: center;
-    align-items: center;
-    margin: 1.5rem 0 2rem 0;
-    font-weight: bold;
-    font-size: x-large;
-  }
+
 
   .cards {
     height: 57.02456rem;
@@ -82,8 +75,27 @@ $text-color: #DFDFDF;
       .Images {
         display: flex;
         justify-content: center;
-        margin-top: 5.12rem;
+        align-items: center;
+        margin-top: 5rem;
         gap: 4rem;
+
+        img:last-child {
+          margin-bottom: 2.5rem; // sobe só o segundo ícone
+        }
+
+        .outlookWrapper img {
+          filter: drop-shadow(0 13px 13px rgba(0, 0, 0, 0.22)) drop-shadow(0 30px 18px rgba(0, 0, 0, 0.13)) drop-shadow(0 52px 21px rgba(0, 0, 0, 0.04));
+        }
+      }
+
+      .upText {
+        display: flex;
+        color: $text-color;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem 0 2rem 0;
+        font-weight: bold;
+        font-size: x-large;
       }
     }
 
@@ -104,6 +116,16 @@ $text-color: #DFDFDF;
         gap: 4rem;
       }
 
+      .upText {
+        display: flex;
+        color: $text-color;
+        justify-content: center;
+        align-items: center;
+        margin: 3rem 0 2rem 0;
+        font-weight: bold;
+        font-size: x-large;
+      }
+
     }
 
     .card3 {
@@ -122,6 +144,16 @@ $text-color: #DFDFDF;
         gap: 4rem;
       }
 
+      .upText {
+        display: flex;
+        color: $text-color;
+        justify-content: center;
+        align-items: center;
+        margin: 3rem 0 2rem 0;
+        font-weight: bold;
+        font-size: x-large;
+      }
+
     }
 
     .card4 {
@@ -138,6 +170,16 @@ $text-color: #DFDFDF;
         display: flex;
         justify-content: center;
         gap: 4rem;
+      }
+
+      .upText {
+        display: flex;
+        color: $text-color;
+        justify-content: center;
+        align-items: center;
+        margin: 3rem 0 2rem 0;
+        font-weight: bold;
+        font-size: x-large;
       }
 
     }
