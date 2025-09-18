@@ -7,8 +7,18 @@
   }
 }
 
+html, body, #__next {
+  scroll-behavior: auto; /* Lenis cuida da suavidade */
+}
+
 html{
-  scroll-behavior: smooth; 
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#HowItWorks, #Flow, #Functions {
+  scroll-margin-top: calc(var(--nav-height) + 0.5rem);
 }
 
 body {

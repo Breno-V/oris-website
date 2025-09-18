@@ -1,25 +1,18 @@
 $text-color: #DFDFDF;
 
-// .welcomeArea {
-//   display: flex;
-//   width: 90rem;
-//   height: 139.6875rem;
-//   flex-shrink: 0;
+.welcomeArea {
+  display: flex;
+  width: 90rem;
+  height: 139.6875rem;
+  flex-shrink: 0;
 
-//   .title {
-//     color: #DFDFDF;
-//     justify-content: center;
-//     text-align: center;
-//     /* Title Hero */
-//     font-family: var(--sds-typography-title-hero-font-family);
-//     font-size: var(--sds-typography-title-hero-size);
-//     font-style: normal;
-//     font-weight: var(--sds-typography-title-hero-font-weight);
-//     line-height: 120%;
-//     /* 5.4rem */
-//     letter-spacing: -0.135rem;
-//   }
-// }
+  .title {
+    color: #DFDFDF;
+    justify-content: center;
+    text-align: center;
+    
+  }
+}
 
 .HIWcontainer {
   display: flex;
