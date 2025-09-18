@@ -2,15 +2,38 @@ $text-color: #DFDFDF;
 
 .welcomeArea {
   display: flex;
-  width: 90rem;
-  height: 139.6875rem;
+  width: 100rem;
+  height: 139rem;
   flex-shrink: 0;
+  flex-direction: column;
 
-  .title {
+  .titleImpact {
     color: #DFDFDF;
     justify-content: center;
     text-align: center;
-    
+    align-items: center;
+    margin-top: 15rem;
+    margin-left: 15rem;
+    font-weight: bold;
+    font-size: 100;
+
+    .ImageDesign {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-top: -1.5rem;
+      margin-left: 13rem;
+    }
+  }
+
+  .subtitle {
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 30;
+    width: 37rem;
+    margin-left: 39rem;
+    margin-top: 3rem;
   }
 }
 

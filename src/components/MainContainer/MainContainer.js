@@ -6,7 +6,12 @@ export default function MainContainer() {
         <>
             <section>
                 <div className="welcomeArea">
-                    <div className="title">App de hábitos que se adapta à sua rotina</div>
+                    <div className="titleImpact">App de hábitos que se adapta à sua rotina
+                        <div className="ImageDesign">
+                            <Image src="/design-below-title.png" alt="risco abaixo do titulo" height={40} width={350} />
+                        </div>
+                    </div>
+                    <div className="subtitle"> Integrado ao seu calendário, Oris adapta seus hábitos à sua rotina e lembra você no momento exato. </div>
                 </div>
             </section>
             <section>
