@@ -17,10 +17,6 @@ html{
   padding: 0;
 }
 
-#HowItWorks, #Flow, #Functions {
-  scroll-margin-top: calc(var(--nav-height) + 0.5rem);
-}
-
 body {
   display: flex;
   flex-direction: column;

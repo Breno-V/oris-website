@@ -6,24 +6,35 @@ import Image from "next/image";
 import ButtonDownload from "@/components/ButtonDownload/Download.js";
 export default function NavBar() {
 
-    const lenis = useLenis(); // vamos retornar o lenis instance do hook
+    const lenis = useLenis();
 
     const handleClick = (e) => {
         const href = e.currentTarget.getAttribute("href");
-        if (!href.startsWith("#") || !lenis) return; // garante que lenis existe
+        if (!href.startsWith("#") || !lenis) return;
 
         e.preventDefault();
         const target = document.querySelector(href);
         if (!target) return;
 
-        lenis.scrollTo(target); // scroll suave via Lenis
+        const targetPosition = target.getBoundingClientRect().top + window.scrollY;
+
+        const navHeight = 104;
+        lenis.scrollTo(targetPosition - navHeight, {
+            duration: 1.2,
+            easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+        });
+
         history.replaceState(null, "", href);
     };
 
     return (
         <div className="navBar">
-            <div className="logo">
-                <Image src="/logo.png" alt="Logo" width={94} height={25.87} />
+            <div className="logo" onClick={() => lenis && lenis.scrollTo(0)} style={{ cursor: 'pointer' }}>
+                <Image src="/logo.png"
+                    alt="Logo"
+                    width={94}
+                    height={25.87}
+                />
             </div>
             <ul className="ul">
                 <li className="li">

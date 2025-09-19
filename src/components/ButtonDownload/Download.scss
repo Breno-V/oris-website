@@ -1,19 +1,20 @@
 .Download {
-    display: flex;
-    background-color: #2A79C1;
+    display: inline-flex; // 🔥 se ajusta ao conteúdo
     justify-content: center;
-    text-align: center;
     align-items: center;
+    padding: 0.8em 2em; // 🔥 controla altura e largura pelo texto
+    background-color: #2A79C1;
+    color: white; // garante contraste
+    text-align: center;
     text-decoration: none;
-    touch-action: manipulation;
     border: none;
-    border-radius: 2.4vh;
-    height: 4.8vh;
-    width: 14.7vh;
+    border-radius: 6em; // 🔥 proporcional ao tamanho do botão
     cursor: pointer;
     font-family: Inter, sans-serif;
-    transition: 0.3s;
+    font-size: clamp(0.9rem, 1.5vw, 1.2rem); // 🔥 responsivo
+    transition: background-color 0.3s;
 }
+
 .Download:hover {
     background-color: #1F5EA8;
 }
