@@ -30,8 +30,8 @@ export default function MainContainer() {
                                 <div className="Images">
                                     <Image src="/Iphone 15 Pro Max Black Titanium-1.png" alt="imagem de exemplo de um celular" width={300} height={200} />
                                 </div>
-                                <p className="upText">Integração inteligente com calendário</p>
-                                <p className="text">Oris entende sua rotina ao se conectar ao seu calendário, organizando seus hábitos nos momentos ideais para você.</p>
+                                <p className="upText">Criação de hábitos em linguagem natural</p>
+                                <p className="text">Basta descrever o hábito em uma frase simples. O Oris transforma sua ideia em uma rotina estruturada automaticamente.</p>
                             </div>
                         </div>
                         <div className="cardsDown">
