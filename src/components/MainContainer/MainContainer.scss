@@ -1,10 +1,13 @@
 $text-color: #DFDFDF;
 
+
 .welcomeArea {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-image: url('/grade.png');
+  background-size: cover;
 
   width: 100%;
   min-height: 70vh;
@@ -23,14 +26,14 @@ $text-color: #DFDFDF;
     font-size: clamp(2rem, 5vw, 6rem); // responsivo
 
     .highlight {
-    position: relative;
+      position: relative;
 
-    // imagem como "sublinhado"
-    background-image: url("/design-below-title.png");
-    background-repeat: no-repeat;
-    background-position:  bottom; // centralizada embaixo da palavra
-    background-size: contain;          // ajusta sem deformar
-  }
+      // imagem como "sublinhado"
+      background-image: url("/design-below-title.png");
+      background-repeat: no-repeat;
+      background-position: bottom; // centralizada embaixo da palavra
+      background-size: contain; // ajusta sem deformar
+    }
   }
 
   .subtitle {
@@ -38,10 +41,69 @@ $text-color: #DFDFDF;
     justify-content: center;
     text-align: center;
     font-size: clamp(1rem, 2vw, 2rem);
-    width: 100%; 
-    max-width:70rem;
-    margin:0;
-    
+    width: 100%;
+    max-width: 70vh;
+    margin: 0;
+
+  }
+}
+
+.containerDownloadNow {
+  background-image: url('/grade.png');
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  .btnDownloadNow {
+    font-size: medium;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: 21.4vh;
+    height: 6vh;
+    text-align: center;
+    border-radius: 3vh;
+    border: none;
+    background: #2A79C1;
+    box-shadow: 0 0 13.2px 0 #2883BD;
+
+    .iconDownload {
+      margin: 1.5vh;
+    }
+  }
+
+  .btnDownloadNow:hover{
+    background-color: #1F5EA8;
+  }
+}
+
+.containerDemonstration {
+  position: relative;
+  background-image: url('/grade.png');
+  background-size: cover;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 40vh;
+    height: 40vh;
+    top: 20vh;
+    left: 70vh;
+    border-radius: 46.0625rem;
+    background: rgba(40, 131, 189, 0.60);
+    filter: blur(200px);
+    z-index: 0;
+  }
+
+  .imageDemonstration {
+    padding-top: 7vh;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    position: relative;
+
   }
 }
 
@@ -55,6 +117,8 @@ $text-color: #DFDFDF;
   max-width: 70rem;
   margin: 6vh auto;
   min-height: 70vh;
+
+
 
   .title {
     background: linear-gradient(90deg, #DFDFDF 0%, #2883BD 100%);
@@ -89,7 +153,7 @@ $text-color: #DFDFDF;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      flex-wrap: wrap; 
+      flex-wrap: wrap;
       gap: 3vw;
     }
 
@@ -101,11 +165,9 @@ $text-color: #DFDFDF;
       padding: 2vh;
       border-radius: 2rem;
       border: 1px solid rgba(255, 255, 255, 0.36);
-      background: linear-gradient(
-        180deg,
-        rgba(255, 255, 255, 0.10) 45.19%,
-        rgba(61, 61, 61, 0.10) 100%
-      );
+      background: linear-gradient(180deg,
+          rgba(255, 255, 255, 0.10) 45.19%,
+          rgba(61, 61, 61, 0.10) 100%);
       backdrop-filter: blur(7.2px);
 
       .Images {
@@ -120,9 +182,7 @@ $text-color: #DFDFDF;
         }
 
         .outlookWrapper img {
-          filter: drop-shadow(0 13px 13px rgba(0, 0, 0, 0.22))
-                  drop-shadow(0 30px 18px rgba(0, 0, 0, 0.13))
-                  drop-shadow(0 52px 21px rgba(0, 0, 0, 0.04));
+          filter: drop-shadow(0 13px 13px rgba(0, 0, 0, 0.22)) drop-shadow(0 30px 18px rgba(0, 0, 0, 0.13)) drop-shadow(0 52px 21px rgba(0, 0, 0, 0.04));
         }
       }
 
@@ -149,14 +209,12 @@ $text-color: #DFDFDF;
       max-width: 34rem;
       min-width: 18rem;
       height: 50vH;
-      
+
       border-radius: 2rem;
       border: 1px solid rgba(255, 255, 255, 0.36);
-      background: linear-gradient(
-        180deg,
-        rgba(255, 255, 255, 0.10) 45.19%,
-        rgba(61, 61, 61, 0.10) 100%
-      );
+      background: linear-gradient(180deg,
+          rgba(255, 255, 255, 0.10) 45.19%,
+          rgba(61, 61, 61, 0.10) 100%);
       backdrop-filter: blur(7.2px);
 
       .Images {
@@ -170,9 +228,7 @@ $text-color: #DFDFDF;
         }
 
         .outlookWrapper img {
-          filter: drop-shadow(0 13px 13px rgba(0, 0, 0, 0.22))
-                  drop-shadow(0 30px 18px rgba(0, 0, 0, 0.13))
-                  drop-shadow(0 52px 21px rgba(0, 0, 0, 0.04));
+          filter: drop-shadow(0 13px 13px rgba(0, 0, 0, 0.22)) drop-shadow(0 30px 18px rgba(0, 0, 0, 0.13)) drop-shadow(0 52px 21px rgba(0, 0, 0, 0.04));
         }
       }
 
@@ -199,14 +255,12 @@ $text-color: #DFDFDF;
       max-width: 34rem;
       min-width: 18rem;
       height: 50vh;
-    
+
       border-radius: 2rem;
       border: 1px solid rgba(255, 255, 255, 0.36);
-      background: linear-gradient(
-        180deg,
-        rgba(255, 255, 255, 0.10) 45.19%,
-        rgba(61, 61, 61, 0.10) 100%
-      );
+      background: linear-gradient(180deg,
+          rgba(255, 255, 255, 0.10) 45.19%,
+          rgba(61, 61, 61, 0.10) 100%);
       backdrop-filter: blur(7.2px);
 
       .Images {
@@ -220,9 +274,7 @@ $text-color: #DFDFDF;
         }
 
         .outlookWrapper img {
-          filter: drop-shadow(0 13px 13px rgba(0, 0, 0, 0.22))
-                  drop-shadow(0 30px 18px rgba(0, 0, 0, 0.13))
-                  drop-shadow(0 52px 21px rgba(0, 0, 0, 0.04));
+          filter: drop-shadow(0 13px 13px rgba(0, 0, 0, 0.22)) drop-shadow(0 30px 18px rgba(0, 0, 0, 0.13)) drop-shadow(0 52px 21px rgba(0, 0, 0, 0.04));
         }
       }
 
@@ -243,19 +295,18 @@ $text-color: #DFDFDF;
         text-align: justify;
       }
     }
+
     .card4 {
       flex: 1 1 calc(50% - 3vw);
       max-width: 34rem;
       min-width: 18rem;
       height: 50vh;
-    
+
       border-radius: 2rem;
       border: 1px solid rgba(255, 255, 255, 0.36);
-      background: linear-gradient(
-        180deg,
-        rgba(255, 255, 255, 0.10) 45.19%,
-        rgba(61, 61, 61, 0.10) 100%
-      );
+      background: linear-gradient(180deg,
+          rgba(255, 255, 255, 0.10) 45.19%,
+          rgba(61, 61, 61, 0.10) 100%);
       backdrop-filter: blur(7.2px);
 
       .Images {
@@ -269,9 +320,7 @@ $text-color: #DFDFDF;
         }
 
         .outlookWrapper img {
-          filter: drop-shadow(0 13px 13px rgba(0, 0, 0, 0.22))
-                  drop-shadow(0 30px 18px rgba(0, 0, 0, 0.13))
-                  drop-shadow(0 52px 21px rgba(0, 0, 0, 0.04));
+          filter: drop-shadow(0 13px 13px rgba(0, 0, 0, 0.22)) drop-shadow(0 30px 18px rgba(0, 0, 0, 0.13)) drop-shadow(0 52px 21px rgba(0, 0, 0, 0.04));
         }
       }
 
@@ -292,5 +341,26 @@ $text-color: #DFDFDF;
         text-align: justify;
       }
     }
+  }
+}
+
+.FlowContainer{
+
+  .title {
+    background: linear-gradient(90deg, #DFDFDF 0%, #2883BD 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-size: clamp(2.88vh, 3vw, 4vh);
+    line-height: 1.8;
+    letter-spacing: -0.096vh;
+    margin-bottom: 5vh;
+  }
+
+  .mainContent{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
 }

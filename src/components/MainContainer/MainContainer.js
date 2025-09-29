@@ -10,6 +10,28 @@ export default function MainContainer() {
                     </div>
                     <div className="subtitle"> Integrado ao seu calendário, Oris adapta seus hábitos à sua rotina e lembra você no momento exato. </div>
                 </div>
+                <div className="containerDownloadNow">
+                    <button className="btnDownloadNow">Baixe gratuitamente
+                        <Image
+                            className="iconDownload"
+                            src="/download-icon.png"
+                            alt="icone de celular"
+                            width={12}
+                            height={20}
+                        />
+                    </button>
+                </div>
+                <div className="containerDemonstration">
+                    <div className="imageDemonstration">
+                        <Image
+                            src={"/Example-cellphone-website.png"}
+                            alt="exemplo de um celular com nosso app aberto"
+                            width={500}
+                            height={650}
+                        />
+
+                    </div>
+                </div>
             </section>
             <section>
                 <div className="HIWcontainer" id="HowItWorks">
@@ -53,6 +75,30 @@ export default function MainContainer() {
                     </div>
                 </div>
             </section>
+            <section>
+                <div className="FlowContainer" id="Flow">
+                    <h2 className="title">Construa hábitos que funcionam no mundo real, não só no papel.</h2>
+                </div>
+                <div className="mainContent">
+                    <h4>Hábitos que se adaptam a sua rotina</h4>
+                    <h4>+</h4>
+                    <h4>Lembretes no momento certo</h4>
+                    <h4>+</h4>
+                    <h4>Organização automática</h4>
+                    <h4>=</h4>
+                    <h4>Constância natural</h4>
+                    <aside>
+                        <Image 
+                        src={"/cellphone-aside.png"}
+                        alt="Celular demonstrando a logo do aplicativo"
+                        width={100}
+                        height={100}
+                        />
+                    </aside>
+                </div>
+
+            </section>
+
         </>
     )
 }

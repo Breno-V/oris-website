@@ -1,17 +1,18 @@
 .Download {
-    display: inline-flex; // 🔥 se ajusta ao conteúdo
+    display: inline-flex; 
     justify-content: center;
     align-items: center;
-    padding: 0.8em 2em; // 🔥 controla altura e largura pelo texto
+    gap: 1.2vh;
+    padding: 1.28vh 3.2vh; 
     background-color: #2A79C1;
-    color: white; // garante contraste
+    color: white; 
     text-align: center;
     text-decoration: none;
     border: none;
-    border-radius: 6em; // 🔥 proporcional ao tamanho do botão
+    border-radius: 9.6vh;
     cursor: pointer;
     font-family: Inter, sans-serif;
-    font-size: clamp(0.9rem, 1.5vw, 1.2rem); // 🔥 responsivo
+    font-size: clamp(1.44vh, 1.5vw, 1.92vh); // 🔥 responsivo
     transition: background-color 0.3s;
 }
 
