@@ -20,7 +20,7 @@ $text-color: #DFDFDF;
     text-align: center;
     width: 100%;
     margin: 0;
-    max-width: 70rem;
+    max-width: 65rem;
     margin-bottom: 5vh;
     font-weight: bold;
     font-size: clamp(2rem, 5vw, 6rem); // responsivo
@@ -42,7 +42,7 @@ $text-color: #DFDFDF;
     text-align: center;
     font-size: clamp(1rem, 2vw, 2rem);
     width: 100%;
-    max-width: 70vh;
+    max-width: 40rem;
     margin: 0;
 
   }
@@ -61,7 +61,7 @@ $text-color: #DFDFDF;
     display: flex;
     align-items: center;
     cursor: pointer;
-    width: 21.4vh;
+    width: 13.375rem;
     height: 6vh;
     text-align: center;
     border-radius: 3vh;
@@ -352,7 +352,7 @@ $text-color: #DFDFDF;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;
-    font-size: clamp(2.88vh, 3vw, 4vh);
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
     line-height: 1.8;
     letter-spacing: -0.096vh;
     margin-bottom: 5vh;
@@ -380,7 +380,6 @@ $text-color: #DFDFDF;
         font-style: normal;
         font-weight: var(--sds-typography-subtitle-font-weight);
         line-height: 120%;
-        /* 38.4px */
         margin-top: -1vh;
         backdrop-filter: blur(12.300000190734863px);
       }
@@ -420,11 +419,208 @@ $text-color: #DFDFDF;
         height: 40vh;
         top: 350vh;
         left: 170vh;
-        border-radius: 46.0625rem;
+        border-radius: 73.7vh;
         background: rgba(40, 131, 189, 0.60);
-        filter: blur(200px);
+        filter: blur(300px);
         z-index: 0;
       }
+    }
+  }
+}
+
+.containerFunctions {
+  .title {
+    background: linear-gradient(90deg, #DFDFDF 0%, #2883BD 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+    line-height: 1.8;
+    letter-spacing: -0.096vh;
+    margin-bottom: 5vh;
+  }
+
+  .blockContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 112vh;
+    height: 80vh;
+    flex-shrink: 0;
+    border-radius: 3.2vh;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.10) 0%, rgba(113, 113, 113, 0.10) 75%);
+    backdrop-filter: blur(5.699999809265137px);
+    margin-left: 50vh;
+    margin-top: 20vh;
+
+    .block1 {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: row;
+      margin-top: -12vh;
+
+      .iconBlocks {
+        margin-top: 5vh;
+        margin-right: 5vh;
+        margin-left: -15vh;
+      }
+
+      .Texts1 {
+        margin-left: -9vh;
+
+        .upperText1 {
+          width: 25.359rem;
+          color: #FFF;
+          font-family: var(--sds-typography-heading-font-family);
+          font-size: 1.5rem;
+          font-style: normal;
+          font-weight: var(--sds-typography-heading-font-weight);
+          line-height: 120%;
+          letter-spacing: -0.48px;
+          margin-bottom: 2vh;
+          margin-top: 7vh;
+        }
+
+        .downText1 {
+          width: 22rem;
+          color: #FFF;
+          font-family: var(--sds-typography-body-font-family);
+          font-size: 0.9rem;
+          font-style: normal;
+          font-weight: var(--sds-typography-body-font-weight-regular);
+          line-height: 140%;
+        }
+      }
+    }
+
+    .block2 {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: row;
+
+      .iconClock {
+        margin-top: 10vh;
+        margin-right: 20vh;
+        margin-left: -29vh;
+      }
+
+      .Texts2 {
+        margin-left: -15vh;
+
+        .upperText2 {
+          width: 25.359rem;
+          color: #FFF;
+          font-family: var(--sds-typography-heading-font-family);
+          font-size: 1.5rem;
+          font-style: normal;
+          font-weight: var(--sds-typography-heading-font-weight);
+          line-height: 120%;
+          letter-spacing: -0.48px;
+          margin-bottom: 2vh;
+          margin-top: 7vh;
+        }
+
+        .downText2 {
+          width: 22rem;
+          color: #FFF;
+          font-family: var(--sds-typography-body-font-family);
+          font-size: 0.9rem;
+          font-style: normal;
+          font-weight: var(--sds-typography-body-font-weight-regular);
+          line-height: 140%;
+        }
+      }
+    }
+
+    .block3 {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: row;
+
+      .iconStatistic {
+        margin-top: 10vh;
+        margin-right: 20vh;
+        margin-left: -27vh;
+      }
+
+      .Texts3 {
+        margin-left: -15vh;
+
+        .upperText3 {
+          width: 25.359rem;
+          color: #FFF;
+          font-family: var(--sds-typography-heading-font-family);
+          font-size: 1.5rem;
+          font-style: normal;
+          font-weight: var(--sds-typography-heading-font-weight);
+          line-height: 120%;
+          letter-spacing: -0.48px;
+          margin-bottom: 2vh;
+          margin-top: 7vh;
+        }
+
+        .downText3 {
+          width: 22rem;
+          color: #FFF;
+          font-family: var(--sds-typography-body-font-family);
+          font-size: 0.9rem;
+          font-style: normal;
+          font-weight: var(--sds-typography-body-font-weight-regular);
+          line-height: 140%;
+        }
+
+      }
+    }
+
+    .block4{
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: row;
+      margin-bottom: 20vh;
+
+      .iconChat {
+        margin-top: 10vh;
+        margin-right: 20vh;
+        margin-left: -27vh;
+      }
+
+      .Texts4 {
+        margin-left: -15vh;
+
+        .upperText4 {
+          width: 25.359rem;
+          color: #FFF;
+          font-family: var(--sds-typography-heading-font-family);
+          font-size: 1.5rem;
+          font-style: normal;
+          font-weight: var(--sds-typography-heading-font-weight);
+          line-height: 120%;
+          letter-spacing: -0.48px;
+          margin-bottom: 2vh;
+          margin-top: 7vh;
+        }
+
+        .downText4 {
+          width: 22rem;
+          color: #FFF;
+          font-family: var(--sds-typography-body-font-family);
+          font-size: 0.9rem;
+          font-style: normal;
+          font-weight: var(--sds-typography-body-font-weight-regular);
+          line-height: 140%;
+        }
+
+      }
+    }
+    .mockup{
+      margin-left: 75vh;
+      margin-top: -74vh;
     }
   }
 }
