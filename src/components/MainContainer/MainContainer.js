@@ -78,24 +78,29 @@ export default function MainContainer() {
             <section>
                 <div className="FlowContainer" id="Flow">
                     <h2 className="title">Construa hábitos que funcionam no mundo real, não só no papel.</h2>
+
+                    <div className="mainContent">
+                        <div className="wordContainer">
+                            <h4 className="wordGray">Hábitos que se adaptam a sua rotina</h4>
+                            <h4 className="symbol">+</h4>
+                            <h4 className="wordGray">Lembretes no momento certo</h4>
+                            <h4 className="symbol">+</h4>
+                            <h4 className="wordGray">Organização automática</h4>
+                            <h4 className="symbol">=</h4>
+                            <h4 className="wordBlue">Constância natural</h4>
+                        </div>
+
+                        <aside className="imageInSide">
+                            <Image
+                                src={"/cellphone-aside.png"}
+                                alt="Celular demonstrando a logo do aplicativo"
+                                width={350}
+                                height={700}
+                            />
+                        </aside>
+                    </div>
                 </div>
-                <div className="mainContent">
-                    <h4>Hábitos que se adaptam a sua rotina</h4>
-                    <h4>+</h4>
-                    <h4>Lembretes no momento certo</h4>
-                    <h4>+</h4>
-                    <h4>Organização automática</h4>
-                    <h4>=</h4>
-                    <h4>Constância natural</h4>
-                    <aside>
-                        <Image 
-                        src={"/cellphone-aside.png"}
-                        alt="Celular demonstrando a logo do aplicativo"
-                        width={100}
-                        height={100}
-                        />
-                    </aside>
-                </div>
+
 
             </section>
 

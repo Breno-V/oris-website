@@ -74,7 +74,7 @@ $text-color: #DFDFDF;
     }
   }
 
-  .btnDownloadNow:hover{
+  .btnDownloadNow:hover {
     background-color: #1F5EA8;
   }
 }
@@ -344,7 +344,7 @@ $text-color: #DFDFDF;
   }
 }
 
-.FlowContainer{
+.FlowContainer {
 
   .title {
     background: linear-gradient(90deg, #DFDFDF 0%, #2883BD 100%);
@@ -358,9 +358,49 @@ $text-color: #DFDFDF;
     margin-bottom: 5vh;
   }
 
-  .mainContent{
+  .mainContent {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
+
+    .wordContainer {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+      text-align: justify;
+      width: 70.7vh;
+      margin-left: 40vh;
+      margin-top: 0vh;
+
+      .wordGray {
+        justify-content: flex-start;
+        color: #798189;
+        font-style: normal;
+        line-height: 120%;
+        margin-top: -5vh;
+      }
+
+      .symbol{
+        justify-content: center;
+        align-items: center;
+        color: #798189;
+        font-style: normal;
+        line-height: 120%;
+        margin-left: 9vh;
+      }
+
+      .wordBlue {
+        justify-content: flex-start;
+        color: #2883BD;
+        font-style: normal;
+        line-height: 120%;
+      }
+    }
+
+    .imageInSide {
+      justify-content: flex-end;
+      align-items: center;
+    }
   }
 }
