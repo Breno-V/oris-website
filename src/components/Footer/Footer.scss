@@ -1,0 +1,48 @@
+.footer {
+  display: flex;
+  background-color: #111;
+  color: white;
+  width: 100%;
+  background: linear-gradient(180deg, #0B0A0C 0%, #212121 37.5%);
+
+  .Description{
+    display: flex;
+    flex-direction: column;
+    width: 55vh;
+    
+  }
+
+  .leftSide {
+    display: flex;
+    flex-direction: column;
+    align-items: justify;
+    justify-content: justify;
+    width: 50%;
+    margin: 5vh;
+    gap: 2vh;
+  }
+
+  .rightSide {
+    display: flex;
+    flex-direction: column;
+    align-items: justify;
+    justify-content: justify;
+    width: 25%;
+    margin: 3vh;
+    gap: 0.5vh;
+
+    .Up{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 5vh;
+    }
+    .Down{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+}

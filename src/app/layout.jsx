@@ -1,5 +1,8 @@
 import { Inter } from "next/font/google";
 import "./styles/globals.scss";
+import Footer from "@/components/Footer/Footer";
+import NavBar from "@/components/NavBar/Navbar";
+import LenisProvider from "@/components/Scroll/lenisProvider";
 
 const InterFont = Inter({
   subsets: ["latin"],
@@ -14,9 +17,13 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="pt-br">
       <body className={`${InterFont.variable} font-sans`}>
-        {children}
+        <LenisProvider>
+          <NavBar />
+          <main>{children}</main>
+          <Footer />
+        </LenisProvider>
       </body>
     </html>
   );

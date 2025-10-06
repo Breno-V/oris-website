@@ -1,0 +1,21 @@
+.Download {
+    display: inline-flex; 
+    justify-content: center;
+    align-items: center;
+    gap: 1.2vh;
+    padding: 1.28vh 3.2vh; 
+    background-color: #2A79C1;
+    color: white; 
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 9.6vh;
+    cursor: pointer;
+    font-family: Inter, sans-serif;
+    font-size: clamp(1.44vh, 1.5vw, 1.92vh); // 🔥 responsivo
+    transition: background-color 0.3s;
+}
+
+.Download:hover {
+    background-color: #1F5EA8;
+}

@@ -1,41 +1,35 @@
 .navBar {
-    display: flex;
-    position: absolute;
-    justify-content: flex-end;
-    border-radius: 3.2vh;
-    border: 0.1vh solid rgba(255, 255, 255, 0.10);
-    background: rgba(64, 64, 64, 0.25);
-    backdrop-filter: blur(1.5vh);
-    width: 93.8vh;
-    height: 6.4vh;
-    margin-top: 2vh;
-    margin-left: 50vh;
 
-    .logo {
-        position: absolute;
-        left: 2vh;
-        top: 0.5vh;
-        width: 9.4vh;
-        height: 5vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        aspect-ratio: 94.00/25.87;
-    }
+    position: fixed;
+    top: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 2rem;
+    border: 0.063rem solid rgba(255, 255, 255, 0.10);
+    background: rgba(64, 64, 64, 0.25);
+    backdrop-filter: blur(0.938rem);
+    width: min(90%, 58.625rem);
+    height: 4rem;
+    padding: 0 1rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
     .ul {
         display: flex;
         justify-content: center;
         align-items: center;
+    
+        list-style: none;
         margin: 0;
         padding: 0;
-        list-style: none;
 
         .li {
-            padding: 2.5vh;
+            padding: 1.563rem;
 
             .Flow {
-                background-color: #e29bf8;
                 text-align: center;
                 align-items: center;
                 text-decoration: none;
@@ -43,24 +37,12 @@
             }
 
             .HowItWorks {
-                background-color: #e29bf8;
                 text-align: center;
                 align-items: center;
                 text-decoration: none;
                 touch-action: manipulation;
             }
 
-            .Download {
-                background-color: #2A79C1;
-                text-align: center;
-                align-items: center;
-                text-decoration: none;
-                touch-action: manipulation;
-                border: none;
-                border-radius: 2.4vh;   
-                height: 4.8vh;
-                width: 14.7vh;
-            }
         }
 
     }
