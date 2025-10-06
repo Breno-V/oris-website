@@ -51,7 +51,7 @@ export default function NavBar() {
                     <a href="#Functions" onClick={handleClick}>Funcionalidades</a>
                 </li>
                 <li className="li">
-                    <ButtonDownload />
+                    <a href="#Download" onClick={handleClick}><ButtonDownload /></a>
                 </li>
             </ul>
         </div>
