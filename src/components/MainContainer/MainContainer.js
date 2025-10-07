@@ -30,7 +30,6 @@ export default function MainContainer() {
                                 width={500}
                                 height={650}
                             />
-
                         </div>
                     </div>
                 </section>
@@ -54,7 +53,7 @@ export default function MainContainer() {
                                 </div>
                                 <div className="card2">
                                     <div className="Images">
-                                        <Image src="/Iphone 15 Pro Max Black Titanium-1.png" alt="imagem de exemplo de um celular" width={300} height={200} />
+                                        <Image src="/Iphone 15 Pro Max Black Titanium-1.png" alt="imagem de exemplo de um celular" width={300} height={190} />
                                     </div>
                                     <p className="upText">Criação de hábitos em linguagem natural</p>
                                     <p className="text">Basta descrever o hábito em uma frase simples. O Oris transforma sua ideia em uma rotina estruturada automaticamente.</p>
@@ -70,7 +69,7 @@ export default function MainContainer() {
                                 </div>
                                 <div className="card4">
                                     <div className="Images">
-                                        <Image src="/Agenda.png" alt="imagem de exemplo da agenda do usuário" width={300} height={200} />
+                                        <Image src="/Agenda.png" alt="imagem de exemplo da agenda do usuário" width={300} height={170} />
                                     </div>
                                     <p className="upText">Hábitos flexíveis</p>
                                     <p className="text">Se surgir um imprevisto, o Oris reorganiza seus hábitos sem atrapalhar sua rotina.</p>
@@ -82,7 +81,9 @@ export default function MainContainer() {
                 <section>
                     <div className="FlowContainer" id="Flow">
                         <h2 className="title">Construa hábitos que funcionam no mundo real, não só no papel.</h2>
-
+                        <div className="label">
+                            FLOW
+                        </div>
                         <div className="mainContent">
                             <div className="wordContainer">
                                 <h4 className="wordGray">Hábitos que se adaptam a sua rotina</h4>
@@ -108,7 +109,9 @@ export default function MainContainer() {
                 <section>
                     <div className="containerFunctions" id="Functions">
                         <h2 className="title">Um app de hábitos mais inteligente, preciso e prático.</h2>
-
+                        <div className="label">
+                            FUNCIONALIDADES
+                        </div>
                         <div className="blockContainer">
                             <div className="block1">
                                 <div className="iconBlocks">
