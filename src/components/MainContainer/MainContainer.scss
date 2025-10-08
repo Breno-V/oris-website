@@ -4,6 +4,7 @@
     background: #0B0A0C;
 
     .welcomeArea {
+      position: relative;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -11,9 +12,9 @@
       background-image: url('/grade.png');
       background-size: cover;
 
-      width: 100%;
-      height: 70vh;
-      margin-bottom: -10vh;
+      min-width: 100%;
+      min-height: 700px;
+      margin-bottom: -100px;
 
       .titleImpact {
         color: $text-color;
@@ -21,7 +22,7 @@
         justify-content: center;
         align-items: center;
         text-align: center;
-        width: 100%;
+        max-width: 100%;
         margin: 0;
         max-width: 75rem;
         margin-bottom: 5vh;
@@ -35,10 +36,10 @@
           &::after {
             content: "";
             position: absolute;
-            top: 47;
+            top: 37px;
             left: 0;
             width: 100%;
-            height: 100%;
+            height: 150px;
             background-image: url("/design-below-title.png");
             background-repeat: no-repeat;
             background-size: contain;
@@ -49,13 +50,11 @@
       }
 
       .subtitle {
-        align-items: center;
-        justify-content: center;
         text-align: center;
         font-size: clamp(1rem, 2vw, 2rem);
         width: 100%;
         max-width: 40rem;
-        margin: 0;
+        margin: 0 auto;
 
       }
     }
@@ -66,15 +65,17 @@
       display: flex;
       flex-direction: row;
       justify-content: center;
+      z-index: 0;
 
       .btnDownloadNow {
+        z-index: 1;
         font-size: medium;
         justify-content: center;
         display: flex;
         align-items: center;
         cursor: pointer;
         width: 13.375rem;
-        height: 6vh;
+        height: 60px;
         text-align: center;
         border-radius: 3vh;
         border: none;
@@ -99,16 +100,17 @@
       position: relative;
       background-image: url('/grade.png');
       background-size: cover;
-
+      background-position: center;
+      background-repeat: no-repeat;
 
       &::before {
         content: "";
         position: absolute;
-        width: 40vh;
-        height: 40vh;
-        top: 20vh;
-        left: 70vh;
-        border-radius: 46.0625rem;
+        width: clamp(15rem, 30vw, 27rem);
+        height: clamp(15rem, 30vw, 25rem);
+        top: clamp(5rem, 15vh, 12rem);
+        left: clamp(10rem, 40vw, 45rem);
+        border-radius: 50%;
         background: rgba(40, 131, 189, 0.60);
         filter: blur(200px);
         z-index: 0;
@@ -117,22 +119,21 @@
       &::after {
         content: "";
         position: absolute;
-        bottom: -55;
+        bottom: -55px;
         left: 0;
         width: 100%;
-        height: clamp(100px, 45vh, 300px);
+        height: clamp(6rem, 30vh, 18rem);
         background: linear-gradient(to bottom,
             rgba(20, 20, 20, 0) 0%,
             rgba(20, 20, 20, 0.4) 10%,
-            rgba(11, 10, 12, 1) 40%
-          );
-        filter: blur(25px);
+            rgba(11, 10, 12, 1) 40%);
+        filter: blur(15px);
         pointer-events: none;
         z-index: 2;
       }
 
       .imageDemonstration {
-        padding-top: 7vh;
+        padding-top: 6rem;
         display: flex;
         justify-content: center;
         z-index: 1;
@@ -145,12 +146,11 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: center;
 
       width: 100%;
       max-width: 70rem;
-      margin: 6vh auto;
-      min-height: 70vh;
+      margin: clamp(3rem, 6vh, 6rem) auto;
+      min-height: clamp(50vh, 70vh, 90vh);
 
 
 
@@ -163,21 +163,22 @@
         font-size: clamp(1.8rem, 3vw, 3.5rem);
         line-height: 1.8;
         letter-spacing: -0.06rem;
-        margin-bottom: 5vh;
+        margin-bottom: clamp(2rem, 5vh, 4rem);
       }
 
       .label {
         display: flex;
         position: relative;
-        right: 60vh;
-        margin-top: 2vh;
-        margin-bottom: 5vh;
+        right: 0;
+        margin-top: clamp(1vh, 2vh, 4vh);
+        margin-bottom: clamp(2.5vh, 5vh, 10vh);
+        margin-left: clamp(1.5vh, 3vh, 6vh);
         justify-content: center;
         align-items: center;
-        width: 183px;
-        height: 44px;
+        width: 11.5rem;
+        height: 2.75rem;
         flex-shrink: 0;
-        border-radius: 37.5px;
+        border-radius: 2rem;
         background: #141414;
       }
 
@@ -206,12 +207,11 @@
           gap: 3vw;
         }
 
-        .card1 {
+        .card {
           flex: 1 1 calc(50% - 3vw);
           max-width: 34rem;
           min-width: 18rem;
-          height: 50vh;
-          padding: 2vh;
+          height: clamp(25rem, 30vh, 35rem);
           border-radius: 2rem;
           border: 1px solid rgba(255, 255, 255, 0.36);
           background: linear-gradient(180deg,
@@ -219,12 +219,12 @@
               rgba(61, 61, 61, 0.10) 100%);
           backdrop-filter: blur(7.2px);
 
-          .Images {
+          .icons {
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-top: 5vh;
             gap: 4vw;
+            margin-top: 5vh;
 
             img:last-child {
               margin-bottom: 4vh;
@@ -235,158 +235,58 @@
             }
           }
 
-          .upText {
-            display: flex;
-            color: $text-color;
-            justify-content: left;
-            align-items: center;
-            margin: 3% 5%;
-            font-weight: bold;
-            font-size: clamp(1rem, 1.5vw, 1.5rem);
-            text-align: left;
-          }
-
-          .text {
-            font-size: clamp(0.9rem, 1.2vw, 1.2rem);
-            margin: 5% 5%;
-            text-align: justify;
-          }
-        }
-
-        .card2 {
-          flex: 1 1 calc(50% - 3vw);
-          max-width: 34rem;
-          min-width: 18rem;
-          height: 50vH;
-
-          border-radius: 2rem;
-          border: 1px solid rgba(255, 255, 255, 0.36);
-          background: linear-gradient(180deg,
-              rgba(255, 255, 255, 0.10) 45.19%,
-              rgba(61, 61, 61, 0.10) 100%);
-          backdrop-filter: blur(7.2px);
-
           .Images {
             display: flex;
             justify-content: center;
             align-items: center;
             gap: 4vw;
-
-            img:last-child {
-              margin-bottom: 2vh;
-            }
-
-            .outlookWrapper img {
-              filter: drop-shadow(0 13px 13px rgba(0, 0, 0, 0.22)) drop-shadow(0 30px 18px rgba(0, 0, 0, 0.13)) drop-shadow(0 52px 21px rgba(0, 0, 0, 0.04));
-            }
           }
 
-          .upText {
-            display: flex;
+          .upText4 {
             color: $text-color;
-            justify-content: left;
-            align-items: center;
-            margin: -1% 5%;
             font-weight: bold;
             font-size: clamp(1rem, 1.5vw, 1.5rem);
+            margin-left: 2rem;
+            margin-top: 3rem;
+            margin-bottom: -0.05rem;
             text-align: left;
           }
 
-          .text {
+          .upText1 {
+            color: $text-color;
+            font-weight: bold;
+            font-size: clamp(1rem, 1.5vw, 1.5rem);
+            margin-left: 2rem;
+            margin-top: 1rem;
+            text-align: left;
+          }
+
+          .text1 {
+            color: $text-color;
             font-size: clamp(0.9rem, 1.2vw, 1.2rem);
-            margin: 6% 5%;
+            margin: 3rem 2rem;
             text-align: justify;
           }
-        }
 
-        .card3 {
-          flex: 1 1 calc(50% - 3vw);
-          max-width: 34rem;
-          min-width: 18rem;
-          height: 50vh;
-
-          border-radius: 2rem;
-          border: 1px solid rgba(255, 255, 255, 0.36);
-          background: linear-gradient(180deg,
-              rgba(255, 255, 255, 0.10) 45.19%,
-              rgba(61, 61, 61, 0.10) 100%);
-          backdrop-filter: blur(7.2px);
-
-          .Images {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 4vw;
-
-            img:last-child {
-              margin-bottom: 2vh;
-            }
-
-            .outlookWrapper img {
-              filter: drop-shadow(0 13px 13px rgba(0, 0, 0, 0.22)) drop-shadow(0 30px 18px rgba(0, 0, 0, 0.13)) drop-shadow(0 52px 21px rgba(0, 0, 0, 0.04));
-            }
-          }
-
-          .upText {
-            display: flex;
+          .text4 {
             color: $text-color;
-            justify-content: left;
-            align-items: center;
-            margin: -3% 5%;
-            font-weight: bold;
-            font-size: clamp(1rem, 1.5vw, 1.5rem);
-            text-align: left;
-          }
-
-          .text {
             font-size: clamp(0.9rem, 1.2vw, 1.2rem);
-            margin: 8% 5%;
+            margin: 1rem 2rem;
             text-align: justify;
           }
-        }
-
-        .card4 {
-          flex: 1 1 calc(50% - 3vw);
-          max-width: 34rem;
-          min-width: 18rem;
-          height: 50vh;
-
-          border-radius: 2rem;
-          border: 1px solid rgba(255, 255, 255, 0.36);
-          background: linear-gradient(180deg,
-              rgba(255, 255, 255, 0.10) 45.19%,
-              rgba(61, 61, 61, 0.10) 100%);
-          backdrop-filter: blur(7.2px);
-
-          .Images {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 4vw;
-
-            img:last-child {
-              margin-bottom: 2vh;
-            }
-
-            .outlookWrapper img {
-              filter: drop-shadow(0 13px 13px rgba(0, 0, 0, 0.22)) drop-shadow(0 30px 18px rgba(0, 0, 0, 0.13)) drop-shadow(0 52px 21px rgba(0, 0, 0, 0.04));
-            }
-          }
 
           .upText {
-            display: flex;
             color: $text-color;
-            justify-content: left;
-            align-items: center;
-            margin: 3% 5%;
             font-weight: bold;
             font-size: clamp(1rem, 1.5vw, 1.5rem);
+            margin: 1rem 2rem;
             text-align: left;
           }
 
           .text {
+            color: $text-color;
             font-size: clamp(0.9rem, 1.2vw, 1.2rem);
-            margin: 5% 5%;
+            margin: 1rem 2rem;
             text-align: justify;
           }
         }
@@ -405,9 +305,8 @@
         font-size: clamp(1.8rem, 3vw, 3.5rem);
         line-height: 1.8;
         letter-spacing: -0.096vh;
-        margin-bottom: 5vh;
-        margin-left: 40vh;
-        width: 60%;
+        margin: 0 auto 5vh;
+        width: min(90%, 60rem);
 
       }
 
@@ -415,41 +314,41 @@
         display: flex;
         position: relative;
         left: 14%;
-        margin-bottom: -5vh;
-        margin-top: 15vh;
+        margin: clamp(1rem, 4vh, 6rem) clamp(-3rem, -5vh, -1rem);
         justify-content: center;
         align-items: center;
-        width: 95px;
-        height: 45px;
+        width: clamp(6rem, 10vw, 7rem);
+        height: clamp(2.5rem, 5vh, 3rem);
         flex-shrink: 0;
-        border-radius: 37.5px;
+        border-radius: 2rem;
         background: #141414;
       }
 
       .mainContent {
         display: flex;
+        flex-wrap: wrap;
         flex-direction: row;
-        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 5vw;
+        margin-top: 5vh;
 
         .wordContainer {
-          display: flex;
-          justify-content: center;
-          align-items: flex-start;
-          flex-direction: column;
+          flex: 1 1 40rem;
+          max-width: 45rem;
           text-align: justify;
-          width: 105.7vh;
-          margin-left: 38vh;
-          margin-top: 10vh;
+          display: flex;
+          flex-direction: column;
+          margin-left: clamp(15rem, 25rem, 45rem);
+          gap: -5rem;
 
           .wordGray {
-            color: #DFDFDF;
+            color: #dfdfdf;
+            font-size: clamp(1.2rem, 2vw, 1.8rem);
             font-family: var(--sds-typography-subtitle-font-family);
-            font-size: 3.7vh;
             font-style: normal;
             font-weight: var(--sds-typography-subtitle-font-weight);
             line-height: 120%;
-            margin-top: -1vh;
-            backdrop-filter: blur(12.300000190734863px);
+            /* 38.4px */
           }
 
           .symbol {
@@ -457,29 +356,28 @@
             align-items: center;
             color: #798189;
             font-family: var(--sds-typography-subtitle-font-family);
-            font-size: 3.7vh;
+            font-size: clamp(1.2rem, 2vw, 1.8rem);
             font-style: normal;
             font-weight: var(--sds-typography-subtitle-font-weight);
             line-height: 120%;
-            margin-left: 9vh;
-            margin-top: -2vh;
+            margin-left: clamp(0.5rem, 6vw, 6rem);
+            margin-top: -0.3rem;
+            margin-bottom: -0.3rem;
           }
 
           .wordBlue {
             color: #2883BD;
             font-family: var(--sds-typography-subtitle-font-family);
-            font-size: 4.5vh;
+            font-size: clamp(1.5rem, 2.5vw, 2rem);
             font-style: normal;
             font-weight: var(--sds-typography-subtitle-font-weight);
-            line-height: 120%;
-            margin-top: -1vh;
             line-height: 120%;
           }
         }
 
         .imageInSide {
           position: relative;
-          margin-left: 50vh;
+          margin-left: 40vh;
           margin-top: -10vh;
           display: flex;
           z-index: 1;
@@ -508,6 +406,12 @@
     }
 
     .containerFunctions {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: clamp(2rem, 8vw, 6rem) 1rem;
+      text-align: center;
+
       .title {
         background: linear-gradient(90deg, #DFDFDF 0%, #2883BD 100%);
         background-clip: text;
@@ -518,31 +422,43 @@
         line-height: 1.8;
         letter-spacing: -0.096vh;
         width: 60%;
-        margin-left: 40vh;
-        margin-top: 25vh;
+        margin-top: clamp(2rem, 8vh, 8rem);
+        margin-bottom: clamp(1rem, 5vh, 5rem);
 
       }
 
       .label {
         display: flex;
         position: relative;
-        left: 21%;
-        margin-top: 15vh;
-        margin-bottom: -15vh;
+        right: 14%;
         justify-content: center;
         align-items: center;
-        width: 199px;
-        height: 46px;
+        width: clamp(8rem, 20vw, 12.5rem);
+        height: clamp(2.5rem, 5vw, 3rem);
         flex-shrink: 0;
-        border-radius: 37.5px;
+        border-radius: 2rem;
         background: #141414;
+        margin: clamp(1rem, 4vh, 6rem) clamp(-3rem, -5vh, -1rem);
+
+        // display: flex;
+        // position: relative;
+        // left: 14%;
+        // margin: clamp(1rem, 4vh, 6rem) clamp(-3rem, -5vh, -1rem);
+        // justify-content: center;
+        // align-items: center;
+        // width: clamp(6rem, 10vw, 7rem);
+        // height: clamp(2.5rem, 5vh, 3rem);
+        // flex-shrink: 0;
+        // border-radius: 2rem;
+        // background: #141414;
       }
 
       .blockContainer {
         display: flex;
-        justify-content: center;
         flex-direction: column;
-        width: 112vh;
+        align-items: center;
+        gap: clamp(2rem, 6vh, 5rem);
+        width: min(90%, 1000px);
         height: 80vh;
         flex-shrink: 0;
         border-radius: 3.2vh;

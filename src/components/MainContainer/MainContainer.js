@@ -41,17 +41,17 @@ export default function MainContainer() {
                         </div>
                         <div className="cards">
                             <div className="cardsUp">
-                                <div className="card1">
-                                    <div className="Images">
+                                <div className="card">
+                                    <div className="icons">
                                         <Image src="/Google-Calendar.png" alt="logo google calendar" width={100} height={120} />
                                         <div className="outlookWrapper">
                                             <Image src="/calendar.png" alt="logo outlook calendar" width={100} height={100} />
                                         </div>
                                     </div>
-                                    <p className="upText">Integração inteligente com calendário</p>
-                                    <p className="text">Oris entende sua rotina ao se conectar ao seu calendário, organizando seus hábitos nos momentos ideais para você.</p>
+                                    <p className="upText1">Integração inteligente com calendário</p>
+                                    <p className="text1">Oris entende sua rotina ao se conectar ao seu calendário, organizando seus hábitos nos momentos ideais para você.</p>
                                 </div>
-                                <div className="card2">
+                                <div className="card">
                                     <div className="Images">
                                         <Image src="/Iphone 15 Pro Max Black Titanium-1.png" alt="em de exemplo de um celular" width={300} height={190} />
                                     </div>
@@ -60,19 +60,19 @@ export default function MainContainer() {
                                 </div>
                             </div>
                             <div className="cardsDown">
-                                <div className="card3">
+                                <div className="card">
                                     <div className="Images">
                                         <Image src="/Cellphone-Example.png" alt="imagem de exemplo de um celular" width={300} height={200} />
                                     </div>
                                     <p className="upText">Lembretes no momento certo</p>
                                     <p className="text">Nada de notificações aleatórias. O Oris envia lembretes quando realmente há espaço no seu dia para agir.</p>
                                 </div>
-                                <div className="card4">
+                                <div className="card">
                                     <div className="Images">
                                         <Image src="/Agenda.png" alt="imagem de exemplo da agenda do usuário" width={300} height={170} />
                                     </div>
-                                    <p className="upText">Hábitos flexíveis</p>
-                                    <p className="text">Se surgir um imprevisto, o Oris reorganiza seus hábitos sem atrapalhar sua rotina.</p>
+                                    <p className="upText4">Hábitos flexíveis</p>
+                                    <p className="text4">Se surgir um imprevisto, o Oris reorganiza seus hábitos sem atrapalhar sua rotina.</p>
                                 </div>
                             </div>
                         </div>
