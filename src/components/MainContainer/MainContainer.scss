@@ -14,7 +14,6 @@ $text-color: #DFDFDF;
 
     min-width: 100%;
     min-height: 700px;
-    margin-bottom: -100px;
 
     .titleImpact {
       color: $text-color;
@@ -25,7 +24,7 @@ $text-color: #DFDFDF;
       max-width: 100%;
       margin: 0;
       max-width: 75rem;
-      margin-bottom: 5vh;
+      margin-bottom: 3.175rem;
       font-weight: bold;
       font-size: clamp(2rem, 5vw, 17rem);
 
@@ -54,7 +53,6 @@ $text-color: #DFDFDF;
       font-size: clamp(1rem, 2vw, 2rem);
       width: 100%;
       max-width: 40rem;
-      margin: 0 auto;
 
     }
   }
@@ -69,6 +67,7 @@ $text-color: #DFDFDF;
 
     .btnDownloadNow {
       z-index: 1;
+      gap: 1rem;
       font-size: medium;
       justify-content: center;
       display: flex;
@@ -77,18 +76,11 @@ $text-color: #DFDFDF;
       width: 13.375rem;
       height: 60px;
       text-align: center;
-      border-radius: 3vh;
+      border-radius: 1.875rem;
       border: none;
       background: #2A79C1;
       box-shadow: 0 0 13.2px 0 #2883BD;
 
-      .iconDownload {
-        margin: 1.5vh;
-      }
-
-      .txtBtnDownloadNow {
-        margin-left: 1vh;
-      }
     }
 
     .btnDownloadNow:hover {

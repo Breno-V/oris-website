@@ -12,9 +12,8 @@ export default function MainContainer() {
                     </div>
                     <div className="containerDownloadNow">
                         <button className="btnDownloadNow">
-                            <div className="txtBtnDownloadNow">Baixe gratuitamente</div>
+                            <div>Baixe gratuitamente</div>
                             <Image
-                                className="iconDownload"
                                 src="/download-icon.png"
                                 alt="icone de celular"
                                 width={12}
