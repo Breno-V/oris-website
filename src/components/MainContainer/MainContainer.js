@@ -53,7 +53,7 @@ export default function MainContainer() {
                                 </div>
                                 <div className="card">
                                     <div className="Images">
-                                        <Image src="/Iphone 15 Pro Max Black Titanium-1.png" alt="em de exemplo de um celular" width={300} height={190} />
+                                        <Image src="/exemplo-chat-ia.png" alt="Imagem de exemplo de um celular" width={300} height={190} />
                                     </div>
                                     <p className="upText">Criação de hábitos em linguagem natural</p>
                                     <p className="text">Basta descrever o hábito em uma frase simples. O Oris transforma sua ideia em uma rotina estruturada automaticamente.</p>
