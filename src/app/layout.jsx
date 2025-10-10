@@ -1,5 +1,7 @@
 import { Inter } from "next/font/google";
-import "./styles/globals.scss";
+import "@/components/MainContainer/MainContainer.scss";
+import "@/app/styles/globals.scss";
+import "@/app/styles/responsive.scss";
 import Footer from "@/components/Footer/Footer";
 import NavBar from "@/components/NavBar/Navbar";
 import LenisProvider from "@/components/Scroll/lenisProvider";

@@ -2,7 +2,6 @@
 
 import "@/components/NavBar/NavBar.scss";
 import { useLenis } from "@/components/Scroll/useLenis";
-import Image from "next/image";
 import ButtonDownload from "@/components/ButtonDownload/Download.js";
 export default function NavBar() {
 

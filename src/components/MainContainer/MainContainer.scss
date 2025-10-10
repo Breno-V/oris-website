@@ -549,7 +549,7 @@ $text-color: #DFDFDF;
       letter-spacing: -0.096vh;
       width: 100%;
       max-width: 50rem;
-      margin-bottom: clamp(5rem, 10vw, 15rem);
+      margin-bottom: clamp(5rem, 5vw, 15rem);
     }
 
     .square1,
@@ -606,6 +606,7 @@ $text-color: #DFDFDF;
         border: none;
         padding: 0;
         cursor: pointer;
+        margin-bottom: clamp(5rem, 15vw, 15rem);
       }
     }
   }
