@@ -1,11 +1,11 @@
 import Image from "next/image";
-import "@/components/ButtonDownload/Download.scss";
+import styles from './Download.module.scss';
 
 export default function ButtonDownload() {
     return (
-        <button className="Download"> Baixe o App
+        <button className={styles.Download}> Baixe o App
             <Image
-                className="iconDownload"
+                className={styles.iconDownload}
                 src="/download-icon.png"
                 alt="icone de celular"
                 width={12}
