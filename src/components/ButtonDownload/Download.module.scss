@@ -1,21 +1,38 @@
 .Download {
-    display: inline-flex; 
+    display: inline-flex;
     justify-content: center;
     align-items: center;
-    gap: 1.2vh;
-    padding: 1.28vh 3.2vh; 
+    gap: clamp(0.4rem, 1vw, 0.8rem);
+    padding: clamp(0.6rem, 1.5vw, 0.9rem) clamp(1.2rem, 3vw, 1.8rem);
     background-color: #2A79C1;
-    color: white; 
+    color: #fff;
     text-align: center;
     text-decoration: none;
     border: none;
-    border-radius: 9.6vh;
+    border-radius: 9999px; // forma pílula, proporcional em qualquer tela
     cursor: pointer;
-    font-family: Inter, sans-serif;
-    font-size: clamp(1.44vh, 1.5vw, 1.92vh); // 🔥 responsivo
-    transition: background-color 0.3s;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: clamp(0.9rem, 1.2vw, 1rem); // responsivo e estável
+    line-height: 1;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+
+    &:hover {
+        background-color: #1F5EA8;
+        transform: translateY(-1px);
+    }
+
+    &:active {
+        transform: translateY(0);
+    }
 }
 
-.Download:hover {
-    background-color: #1F5EA8;
+@media (max-width: 480px) {
+    .Download {
+        padding: 0.5rem 1.2rem;
+        font-size: 0.85rem;
+        white-space: nowrap;
+        flex-direction: row;
+
+    }
 }
