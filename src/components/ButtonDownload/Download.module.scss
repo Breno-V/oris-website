@@ -1,3 +1,5 @@
+$mobile: 480px;
+
 .Download {
     display: inline-flex;
     justify-content: center;
@@ -17,6 +19,15 @@
     line-height: 1;
     transition: background-color 0.3s ease, transform 0.2s ease;
 
+    @media (max-width: $mobile) {
+
+        font-size: 0.85rem;
+        white-space: nowrap;
+        flex-direction: row;
+        width: 6.5rem;
+        height: 3rem;
+    }
+
     &:hover {
         background-color: #1F5EA8;
         transform: translateY(-1px);
@@ -25,14 +36,5 @@
     &:active {
         transform: translateY(0);
     }
-}
 
-@media (max-width: 480px) {
-    .Download {
-        padding: 0.5rem 1.2rem;
-        font-size: 0.85rem;
-        white-space: nowrap;
-        flex-direction: row;
-
-    }
 }

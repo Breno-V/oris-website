@@ -89,7 +89,7 @@ export default function MainContainer() {
             </div>
 
             <aside className={styles.imageInSide}>
-              <Image src="/cellphone-aside.png" alt="Celular demonstrando a logo do aplicativo" width={350} height={300} />
+              <Image src="/cellphone-aside.png" alt="Celular demonstrando a logo do aplicativo" fill />
             </aside>
           </div>
         </div>

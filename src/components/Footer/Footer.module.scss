@@ -1,3 +1,5 @@
+$mobile: 480px;
+
 .footer {
   display: flex;
   background-color: #111;
@@ -5,11 +7,15 @@
   width: 100%;
   background: linear-gradient(180deg, #0B0A0C 0%, #212121 37.5%);
 
-  .Description{
+  .Description {
     display: flex;
     flex-direction: column;
     width: 55vh;
-    
+
+    @media(max-width: $mobile) {
+      width: 35vh;
+    }
+
   }
 
   .leftSide {
@@ -31,18 +37,27 @@
     margin: 3vh;
     gap: 0.5vh;
 
-    .Up{
+    .Up {
       display: flex;
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
       margin-top: 5vh;
+
+      @media(max-width: $mobile) {
+        flex-direction: column;
+      }
     }
-    .Down{
+
+    .Down {
       display: flex;
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
+
+      @media(max-width: $mobile) {
+        flex-direction: column;
+      }
     }
   }
 }
