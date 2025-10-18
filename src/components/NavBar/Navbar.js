@@ -43,7 +43,7 @@ export default function NavBar() {
                 <li className={styles.li}>
                     <a href="#HowItWorks" className="HowItWorks" onClick={handleClick}>Como Funciona</a>
                 </li>
-                <li className={styles.li} style={{marginLeft: '1rem'}}>
+                <li className={styles.li}>
                     <a href="#Flow" className="Flow" onClick={handleClick}>Flow</a>
                 </li>
                 <ul className={styles.ul}>
