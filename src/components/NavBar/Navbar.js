@@ -46,10 +46,12 @@ export default function NavBar() {
                 <li className={styles.li}>
                     <a href="#Flow" className="Flow" onClick={handleClick}>Flow</a>
                 </li>
-                <ul className={styles.ul}>
-                    <li className={styles.li}><a href="#Functions">Funcionalidades</a></li>
-                    <li className={styles.li}><a href="#Download"><ButtonDownload /></a></li>
-                </ul>
+                <li className={styles.li}>
+                    <a href="#Functions" onClick={handleClick}>Funcionalidades</a>                
+                </li>
+                <li className={styles.li}>
+                    <a href="#Download"onClick={handleClick}><ButtonDownload /></a>
+                </li>  
             </ul>
         </div>
     )
