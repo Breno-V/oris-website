@@ -172,8 +172,6 @@ $desktop: 1024px;
     margin: clamp(3rem, 6vh, 6rem) auto;
     min-height: clamp(50vh, 70vh, 90vh);
 
-
-
     .title {
       background: linear-gradient(90deg, #DFDFDF 0%, #2883BD 100%);
       background-clip: text;
@@ -224,7 +222,7 @@ $desktop: 1024px;
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
-        gap: 3vw;
+        gap: 8vw;
       }
 
       .card {
@@ -410,7 +408,7 @@ $desktop: 1024px;
         z-index: 1;
 
         @media(max-width: $mobile) {
-          top: 228rem;
+          top: 235rem;
           width: 10rem;
           height: 23rem;
           right: 0;
