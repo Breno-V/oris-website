@@ -73,11 +73,11 @@ $mobile: 480px;
     .ul {
       width: 100%;
       justify-content: flex-start;
-      
+      gap: 1rem;
       flex-wrap: wrap;
 
       .li {
-        
+        flex-wrap: wrap;
         white-space: wrap;
         font-size: 0.7rem;
       }
