@@ -68,8 +68,6 @@ $desktop: 1024px;
   }
 
   .containerDownloadNow {
-    background-image: url('/grade.png');
-    background-size: cover;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -104,10 +102,11 @@ $desktop: 1024px;
 
   .containerDemonstration {
     position: relative;
-    background-image: url('/grade.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    overflow-x: hidden;
+    overflow-y: hidden;
 
     &::before {
       content: "";
@@ -115,11 +114,19 @@ $desktop: 1024px;
       width: clamp(15rem, 30vw, 27rem);
       height: clamp(15rem, 30vw, 25rem);
       top: clamp(5rem, 15vh, 12rem);
-      left: clamp(10rem, 40vw, 45rem);
+      left: 50%;
+      transform: translateX(-50%);
       border-radius: 50%;
       background: rgba(40, 131, 189, 0.60);
       filter: blur(200px);
       z-index: 0;
+
+      @media(max-width: $mobile) {
+        width: clamp(10rem, 50vw, 15rem);
+        height: clamp(10rem, 50vw, 15rem);
+        top: clamp(8rem, 20vh, 10rem);
+        filter: blur(150px);
+      }
     }
 
     &::after {
@@ -148,7 +155,10 @@ $desktop: 1024px;
       justify-content: center;
       z-index: 0;
       position: relative;
-
+    }
+    img {
+      max-width: 100%;
+      height: auto;
     }
   }
 
@@ -393,26 +403,25 @@ $desktop: 1024px;
       .imageInSide {
         position: absolute; // absoluto para colar na direita
         right: 0; // cola na borda direita
-        top: 180rem;
-        width: min(30rem, 90%);
+        top: 190rem;
+        width: min(30rem, 90vw);
         height: 50rem;
         max-width: 45rem;
         z-index: 1;
 
         @media(max-width: $mobile) {
-          top: 220rem;
-          width: 12rem;
-          height: 25rem;
+          top: 228rem;
+          width: 10rem;
+          height: 23rem;
           right: 0;
-
         }
 
 
         &::before {
           content: "";
           position: absolute;
-          width: 130%;
-          height: 130%;
+          width: 100%;
+          height: 100%;
           inset: 0;
           border-radius: 50%;
           background: rgba(40, 131, 189, 0.60);
@@ -453,7 +462,7 @@ $desktop: 1024px;
     margin-top: clamp(2rem, 8vh, 8rem);
     margin-bottom: clamp(1rem, 5vh, 5rem);
 
-    @media(max-width: $mobile){
+    @media(max-width: $mobile) {
       width: 80%;
     }
 
@@ -676,6 +685,10 @@ $desktop: 1024px;
       padding: 0;
       cursor: pointer;
       margin-bottom: clamp(5rem, 15vw, 15rem);
+
+      @media(max-width: $mobile) {
+        width: 70%;
+      }
     }
   }
 }

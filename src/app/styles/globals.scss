@@ -4,6 +4,12 @@
   // outline: 1px solid red;
   box-sizing: border-box;
   max-width: 100%;
+
+  img,
+  svg {
+    max-width: 100%;
+    height: auto;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -13,11 +19,17 @@
   }
 }
 
-html, body, #__next {
-  scroll-behavior: auto; /* Lenis cuida da suavidade */
+html,
+body,
+#__next {
+  scroll-behavior: auto;
+  /* Lenis cuida da suavidade */
+  width: 100%;
+  max-width: 100%;
+  // overflow-x: hidden;
 }
 
-html{
+html {
   height: 100%;
   margin: 0;
   padding: 0;
@@ -37,11 +49,6 @@ body {
 
 main {
   flex: 1;
-}
-
-* {
-  box-sizing: border-box;
-  
 }
 
 a {
