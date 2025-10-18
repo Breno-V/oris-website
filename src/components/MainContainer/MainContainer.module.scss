@@ -372,6 +372,9 @@ $desktop: 1024px;
           font-style: normal;
           font-weight: var(--sds-typography-subtitle-font-weight);
           line-height: 120%;
+          @media(max-width: $mobile){
+            font-size: 0.7rem;
+          }
         }
 
         .symbol {
@@ -386,6 +389,9 @@ $desktop: 1024px;
           margin-left: clamp(0.5rem, 6vw, 6rem);
           margin-top: -0.3rem;
           margin-bottom: -0.3rem;
+          @media(max-width: $mobile){
+            font-size: 0.5rem;
+          }
         }
 
         .wordBlue {
@@ -395,6 +401,9 @@ $desktop: 1024px;
           font-style: normal;
           font-weight: var(--sds-typography-subtitle-font-weight);
           line-height: 120%;
+          @media(max-width: $mobile){
+            font-size: 0.8rem;
+          }
         }
       }
 
@@ -408,7 +417,7 @@ $desktop: 1024px;
         z-index: 1;
 
         @media(max-width: $mobile) {
-          top: 235rem;
+          top: 215rem;
           width: 10rem;
           height: 23rem;
           right: 0;
