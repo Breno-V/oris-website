@@ -3,7 +3,7 @@ import styles from './Download.module.scss';
 
 export default function ButtonDownload() {
     return (
-        <button className={styles.Download}> Baixe o App
+        <button className={styles.Download}> Saiba mais
             <Image
                 className={styles.iconDownload}
                 src="/download-icon.png"

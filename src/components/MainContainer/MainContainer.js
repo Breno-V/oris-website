@@ -16,8 +16,8 @@ export default function MainContainer() {
         </div>
         <div className={styles.containerDownloadNow}>
           <button className={styles.btnDownloadNow}>
-            <div>Baixe gratuitamente</div>
-            <Image src="/download-icon.png" alt="icone de celular" width={12} height={20} />
+            <div><a href="https://www.instagram.com/orishabitapp/" target="blank">Saiba Mais</a></div>
+            {/* <Image src="/download-icon.png" alt="icone de celular" width={12} height={20} /> */}
           </button>
         </div>
         <div className={styles.containerDemonstration}>
@@ -178,12 +178,12 @@ export default function MainContainer() {
           </svg>
           <div className={styles.containerButtons}>
             <button className={styles.downloadFree}>
-              <div className={styles.txtDownloadFree}>Baixe gratuitamente</div>
-              <Image src="/download-icon.png" width={15} height={25} alt="icone de celular" />
+              <div className={styles.txtDownloadFree}><a href="https://www.instagram.com/orishabitapp/" target="blank">Saiba Mais</a></div>
+              {/* <Image src="/download-icon.png" width={15} height={25} alt="icone de celular" /> */}
             </button>
-            <button className={styles.downloadGooglePlay}>
+            {/* <button className={styles.downloadGooglePlay}>
               <Image src="/download-google.svg" width={720} height={340} alt="imagem para botão Google Play" />
-            </button>
+            </button> */}
           </div>
         </div>
       </section >

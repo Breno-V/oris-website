@@ -479,10 +479,11 @@ $desktop: 1024px;
     flex-shrink: 0;
     border-radius: 2rem;
     background: #141414;
-    margin: clamp(1rem, 4vh, 6rem) clamp(-3rem, -5vh, -1rem);
+    margin: clamp(1rem, 4vh, 6rem);
 
     @media (max-width: $mobile) {
       width: clamp(8rem, 40vw, 12.5rem);
+      margin-left: clamp(-7rem, -7vh, 6rem);
     }
   }
 
@@ -648,7 +649,7 @@ $desktop: 1024px;
       justify-content: center;
       align-items: center;
       gap: 2vh;
-      width: 19.8125rem;
+      width: 20rem;
       height: 3.75rem;
       border: none;
       cursor: pointer;
@@ -656,13 +657,15 @@ $desktop: 1024px;
       background: #2A79C1;
       box-shadow: 0 0 13.2px 0 #2883BD;
       transition: background-color 0.2s ease;
+      margin-bottom: 20rem;
 
       @media (max-width: $mobile) {
-        width: 70%;
+        width: 100%;
         gap: 1vh;
         font-size: 1.1rem;
 
         .txtDownloadFree {
+          
           margin-left: 0;
           text-align: center;
         }
@@ -671,7 +674,7 @@ $desktop: 1024px;
       .txtDownloadFree {
         text-align: justify;
         font-size: 1.5rem;
-        margin-left: 2vh;
+        margin: 2vh;
       }
 
       &:hover {
@@ -679,16 +682,16 @@ $desktop: 1024px;
       }
     }
 
-    .downloadGooglePlay {
-      background: none;
-      border: none;
-      padding: 0;
-      cursor: pointer;
-      margin-bottom: clamp(5rem, 15vw, 15rem);
+    // .downloadGooglePlay {
+    //   background: none;
+    //   border: none;
+    //   padding: 0;
+    //   cursor: pointer;
+    //   margin-bottom: clamp(5rem, 15vw, 15rem);
 
-      @media(max-width: $mobile) {
-        width: 70%;
-      }
-    }
+    //   @media(max-width: $mobile) {
+    //     width: 70%;
+    //   }
+    // }
   }
 }
