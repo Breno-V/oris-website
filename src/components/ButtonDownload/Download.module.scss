@@ -11,11 +11,11 @@ $mobile: 480px;
     text-align: center;
     text-decoration: none;
     border: none;
-    border-radius: 9999px; // forma pílula, proporcional em qualquer tela
+    border-radius: 9999px; 
     cursor: pointer;
     font-family: 'Inter', sans-serif;
     font-weight: 500;
-    font-size: clamp(0.9rem, 1.2vw, 1rem); // responsivo e estável
+    font-size: clamp(0.9rem, 1.2vw, 1rem); 
     line-height: 1;
     transition: background-color 0.3s ease, transform 0.2s ease;
 
