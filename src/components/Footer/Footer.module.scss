@@ -74,6 +74,7 @@ $mobile: 480px;
     @media (max-width: $mobile) {
       width: 90%;
       margin: 2vh auto;
+      margin-left: -0.5vh;
       align-items: flex-start;
       text-align: center;
     }

@@ -28,7 +28,7 @@ $mobile: 480px;
     flex-wrap: wrap;
     list-style: none;
     font-size: medium;
-    padding: 0 1rem;
+    padding: 0.2rem;
 
     .li {
       padding: 0 1.5rem;
@@ -42,44 +42,24 @@ $mobile: 480px;
         line-height: normal;
       }
     }
-
-    .DownNav {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: row;
-      flex-wrap: wrap;
-      list-style: none;
-      font-size: medium;
-      padding: 0 1rem;
-
-      .li {
-        padding: 0 1.5rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100%;
-        line-height: normal;
-      }
-    }
   }
 
   @media(max-width: $mobile) {
     .ul {
       width: 100%;
       display: flex;
-      flex-wrap: nowrap; // força todos na mesma linha
+      flex-wrap: nowrap;
       justify-content: flex-start;
-      align-items: center; // centraliza verticalmente
+      align-items: center; 
 
       .li {
         padding: 0 0.25rem;
         font-size: 0.7rem;
       }
 
-      .li:last-child {
-        margin-left: auto; // empurra o botão para a direita
-      }
+      // .li:last-child {
+      //   margin-left: auto; 
+      // }
     }
   }
 }
