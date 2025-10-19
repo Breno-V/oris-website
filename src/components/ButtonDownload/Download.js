@@ -1,9 +1,12 @@
+"use client"
+
 import Image from "next/image";
 import styles from './Download.module.scss';
 
 export default function ButtonDownload() {
     return (
-        <button className={styles.Download}> Saiba mais
+        <a href="https://www.instagram.com/orishabitapp/" target="_blank" rel="noopener noreferrer" className={styles.Download}>
+            Saiba mais
             <Image
                 className={styles.iconDownload}
                 src="/download-icon.png"
@@ -11,6 +14,7 @@ export default function ButtonDownload() {
                 width={12}
                 height={20}
             />
-        </button>
+        </a>
+
     )
 }

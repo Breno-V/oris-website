@@ -15,10 +15,14 @@ export default function MainContainer() {
           </div>
         </div>
         <div className={styles.containerDownloadNow}>
-          <button className={styles.btnDownloadNow}>
-            <div><a href="https://www.instagram.com/orishabitapp/" target="blank">Saiba Mais</a></div>
-            {/* <Image src="/download-icon.png" alt="icone de celular" width={12} height={20} /> */}
-          </button>
+          <a
+            href="https://www.instagram.com/orishabitapp/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.btnDownloadNow}
+          >
+            Saiba mais
+          </a>
         </div>
         <div className={styles.containerDemonstration}>
           <div className={styles.imageDemonstration}>

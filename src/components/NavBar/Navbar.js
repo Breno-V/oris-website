@@ -50,7 +50,7 @@ export default function NavBar() {
                     <a href="#Functions" onClick={handleClick}>Funcionalidades</a>                
                 </li>
                 <li className={styles.li}>
-                    <a href="#Download"onClick={handleClick}><ButtonDownload /></a>
+                    <ButtonDownload />
                 </li>  
             </ul>
         </div>
