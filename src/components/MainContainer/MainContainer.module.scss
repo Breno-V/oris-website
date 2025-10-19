@@ -34,7 +34,7 @@ $desktop: 1024px;
       font-size: clamp(2rem, 5vw, 17rem);
 
       @media (max-width: $mobile) {
-        margin-top: -10rem;
+        margin-top: 9rem;
       }
 
       .highlight {
@@ -46,7 +46,7 @@ $desktop: 1024px;
           left: 0;
           width: 100%;
           height: 100%;
-          top: 5rem;
+          top: 6rem;
           background-image: url("/design-below-title.png");
           background-repeat: no-repeat;
           background-size: contain;
@@ -62,8 +62,12 @@ $desktop: 1024px;
     .subtitle {
       text-align: center;
       font-size: clamp(1rem, 2vw, 2rem);
-      width: 100%;
+      width: 80%;
       max-width: 40rem;
+
+      @media(max-width: $mobile){
+        margin-bottom: 15rem;
+      }
     }
   }
 
@@ -75,7 +79,7 @@ $desktop: 1024px;
     z-index: 0;
 
     @media (max-width: $mobile) {
-      margin-top: -18rem;
+      margin-top: -12rem;
     }
 
     .btnDownloadNow {
@@ -366,6 +370,7 @@ $desktop: 1024px;
         @media (max-width: $mobile) {
           margin-left: 0rem;
           margin-left: clamp(1rem, 1.5rem, 4rem);
+          gap: 3.5vw;
         }
 
         .wordGray {
@@ -376,7 +381,7 @@ $desktop: 1024px;
           font-weight: var(--sds-typography-subtitle-font-weight);
           line-height: 120%;
           @media(max-width: $mobile){
-            font-size: 0.7rem;
+            font-size: 0.8rem;
           }
         }
 
@@ -393,7 +398,7 @@ $desktop: 1024px;
           margin-top: -0.3rem;
           margin-bottom: -0.3rem;
           @media(max-width: $mobile){
-            font-size: 0.5rem;
+            font-size: 0.6rem;
           }
         }
 
@@ -405,7 +410,7 @@ $desktop: 1024px;
           font-weight: var(--sds-typography-subtitle-font-weight);
           line-height: 120%;
           @media(max-width: $mobile){
-            font-size: 0.8rem;
+            font-size: 0.9rem;
           }
         }
       }
@@ -494,6 +499,8 @@ $desktop: 1024px;
     @media (max-width: $mobile) {
       width: clamp(8rem, 43vw, 12.5rem);
       margin-left: clamp(-7rem, -7vh, 6rem);
+      margin-top: -1.5rem;
+      margin-bottom: -3rem;
     }
   }
 
@@ -615,7 +622,11 @@ $desktop: 1024px;
     letter-spacing: -0.096vh;
     width: 100%;
     max-width: 50rem;
-    margin-bottom: clamp(5rem, 5vw, 15rem);
+    margin-bottom: clamp(5rem, 35vw, 35rem);
+
+    @media(max-width: $mobile){
+      margin-bottom: 15rem;
+    }
   }
 
   .square1,
@@ -631,7 +642,7 @@ $desktop: 1024px;
 
     @media (max-width: $mobile) {
       height: 20rem;
-      bottom: clamp(20%, 505vh, 60%);
+      bottom: clamp(20%, 450vh, 60%);
       left: clamp(0%, 0.1vw, 5%);
     }
   }
@@ -647,61 +658,61 @@ $desktop: 1024px;
     }
   }
 
-  .containerButtons {
-    position: relative;
-    z-index: 5;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  // .containerButtons {
+  //   position: relative;
+  //   z-index: 5;
+  //   display: flex;
+  //   flex-direction: column;
+  //   align-items: center;
 
-    .downloadFree {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 2vh;
-      width: 20rem;
-      height: 3.75rem;
-      border: none;
-      cursor: pointer;
-      border-radius: 1.0625rem;
-      background: #2A79C1;
-      box-shadow: 0 0 13.2px 0 #2883BD;
-      transition: background-color 0.2s ease;
-      margin-bottom: 20rem;
+  //   .downloadFree {
+  //     display: flex;
+  //     justify-content: center;
+  //     align-items: center;
+  //     gap: 2vh;
+  //     width: 20rem;
+  //     height: 3.75rem;
+  //     border: none;
+  //     cursor: pointer;
+  //     border-radius: 1.0625rem;
+  //     background: #2A79C1;
+  //     box-shadow: 0 0 13.2px 0 #2883BD;
+  //     transition: background-color 0.2s ease;
+  //     margin-bottom: 20rem;
 
-      @media (max-width: $mobile) {
-        width: 100%;
-        gap: 1vh;
-        font-size: 1.1rem;
+  //     @media (max-width: $mobile) {
+  //       width: 100%;
+  //       gap: 1vh;
+  //       font-size: 1.1rem;
 
-        .txtDownloadFree {
+  //       .txtDownloadFree {
           
-          margin-left: 0;
-          text-align: center;
-        }
-      }
+  //         margin-left: 0;
+  //         text-align: center;
+  //       }
+  //     }
 
-      .txtDownloadFree {
-        text-align: justify;
-        font-size: 1.5rem;
-        margin: 2vh;
-      }
+  //     .txtDownloadFree {
+  //       text-align: justify;
+  //       font-size: 1.5rem;
+  //       margin: 2vh;
+  //     }
 
-      &:hover {
-        background-color: #1F5EA8;
-      }
-    }
+  //     &:hover {
+  //       background-color: #1F5EA8;
+  //     }
+  //   }
 
-    // .downloadGooglePlay {
-    //   background: none;
-    //   border: none;
-    //   padding: 0;
-    //   cursor: pointer;
-    //   margin-bottom: clamp(5rem, 15vw, 15rem);
+  //   .downloadGooglePlay {
+  //     background: none;
+  //     border: none;
+  //     padding: 0;
+  //     cursor: pointer;
+  //     margin-bottom: clamp(5rem, 15vw, 15rem);
 
-    //   @media(max-width: $mobile) {
-    //     width: 70%;
-    //   }
-    // }
-  }
+  //     @media(max-width: $mobile) {
+  //       width: 70%;
+  //     }
+  //   }
+  // }
 }

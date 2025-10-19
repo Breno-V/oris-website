@@ -12,12 +12,12 @@ export default function Footer() {
 
             <div className={styles.rightSide}>
                 <div className={styles.Up}>
-                    <p>Termos de Uso</p>
-                    <p>Política de Privacidade</p>
+                    <p><a href="https://www.instagram.com/orishabitapp/">Instagram</a></p>
+                    <p><a href="https://www.linkedin.com/company/oris-habit-app/posts/?feedView=all">Linkedin</a></p>
                 </div>
                 <div className={styles.Down}>
-                    <p>Política de Cancelamento</p>
-                    <p>Política de reembolso</p>
+                    <p><a href="https://github.com/Oris-Habit-App">Github</a></p>
+                    <p><a href="mailto:orishabitapp@gmail.com?subject=Quero saber Mais!&body=Olá pessoal do Oris! Vim do site de vocês e gostaria de saber mais sobre o projeto">Email</a></p>
                 </div>
             </div>
         </footer>

@@ -176,15 +176,15 @@ export default function MainContainer() {
               </linearGradient>
             </defs>
           </svg>
-          <div className={styles.containerButtons}>
+          {/* <div className={styles.containerButtons}>
             <button className={styles.downloadFree}>
               <div className={styles.txtDownloadFree}><a href="https://www.instagram.com/orishabitapp/" target="blank">Saiba Mais</a></div>
-              {/* <Image src="/download-icon.png" width={15} height={25} alt="icone de celular" /> */}
+              <Image src="/download-icon.png" width={15} height={25} alt="icone de celular" />
             </button>
-            {/* <button className={styles.downloadGooglePlay}>
+            <button className={styles.downloadGooglePlay}>
               <Image src="/download-google.svg" width={720} height={340} alt="imagem para botão Google Play" />
-            </button> */}
-          </div>
+            </button>
+          </div> */}
         </div>
       </section >
     </div >
